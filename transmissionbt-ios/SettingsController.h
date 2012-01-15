@@ -1,0 +1,3 @@
+@interface SettingsController : UIViewController
+
+@end

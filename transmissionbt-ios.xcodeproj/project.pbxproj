@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0905B2C414C35EDC0038A1F0 /* tabbar-settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 0905B2C214C35EDC0038A1F0 /* tabbar-settings.png */; };
+		0905B2C514C35EDC0038A1F0 /* tabbar-torrents.png in Resources */ = {isa = PBXBuildFile; fileRef = 0905B2C314C35EDC0038A1F0 /* tabbar-torrents.png */; };
 		095DD2B214C344940036D995 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 095DD2B114C344940036D995 /* UIKit.framework */; };
 		095DD2B414C344940036D995 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 095DD2B314C344940036D995 /* Foundation.framework */; };
 		095DD2B614C344940036D995 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 095DD2B514C344940036D995 /* CoreGraphics.framework */; };
@@ -15,9 +17,15 @@
 		095DD2C214C344940036D995 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 095DD2C114C344940036D995 /* AppDelegate.m */; };
 		095DD2C514C344940036D995 /* TorrentsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 095DD2C414C344940036D995 /* TorrentsController.m */; };
 		095DD2C814C344940036D995 /* TorrentsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 095DD2C614C344940036D995 /* TorrentsController.xib */; };
+		95DD2CD14C344940036D998 /* TorrentDetailsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DD2CD14C344940036D997 /* TorrentDetailsController.m */; };
+		95DD2CD14C344940036D99A /* TorrentDetailsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95DD2CD14C344940036D999 /* TorrentDetailsController.xib */; };
+		95DD2CD14C344940036D99D /* SettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DD2CD14C344940036D99C /* SettingsController.m */; };
+		95DD2CD14C344940036D99F /* SettingsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95DD2CD14C344940036D99E /* SettingsController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0905B2C214C35EDC0038A1F0 /* tabbar-settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tabbar-settings.png"; path = "Resources/tabbar-settings.png"; sourceTree = "<group>"; };
+		0905B2C314C35EDC0038A1F0 /* tabbar-torrents.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tabbar-torrents.png"; path = "Resources/tabbar-torrents.png"; sourceTree = "<group>"; };
 		095DD2AD14C344940036D995 /* transmissionbt-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "transmissionbt-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		095DD2B114C344940036D995 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		095DD2B314C344940036D995 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -31,6 +39,12 @@
 		095DD2C314C344940036D995 /* TorrentsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TorrentsController.h; sourceTree = "<group>"; };
 		095DD2C414C344940036D995 /* TorrentsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TorrentsController.m; sourceTree = "<group>"; };
 		095DD2C714C344940036D995 /* TorrentsController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TorrentsController.xib; path = en.lproj/TorrentsController.xib; sourceTree = "<group>"; };
+		95DD2CD14C344940036D996 /* TorrentDetailsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TorrentDetailsController.h; sourceTree = "<group>"; };
+		95DD2CD14C344940036D997 /* TorrentDetailsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TorrentDetailsController.m; sourceTree = "<group>"; };
+		95DD2CD14C344940036D999 /* TorrentDetailsController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TorrentDetailsController.xib; sourceTree = "<group>"; };
+		95DD2CD14C344940036D99B /* SettingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsController.h; sourceTree = "<group>"; };
+		95DD2CD14C344940036D99C /* SettingsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsController.m; sourceTree = "<group>"; };
+		95DD2CD14C344940036D99E /* SettingsController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +61,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0905B2C714C35EED0038A1F0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0905B2C214C35EDC0038A1F0 /* tabbar-settings.png */,
+				0905B2C314C35EDC0038A1F0 /* tabbar-torrents.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		095DD2A214C344940036D995 = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +105,13 @@
 				095DD2C314C344940036D995 /* TorrentsController.h */,
 				095DD2C414C344940036D995 /* TorrentsController.m */,
 				095DD2C614C344940036D995 /* TorrentsController.xib */,
+				95DD2CD14C344940036D999 /* TorrentDetailsController.xib */,
+				95DD2CD14C344940036D997 /* TorrentDetailsController.m */,
+				95DD2CD14C344940036D996 /* TorrentDetailsController.h */,
+				95DD2CD14C344940036D99E /* SettingsController.xib */,
+				95DD2CD14C344940036D99C /* SettingsController.m */,
+				95DD2CD14C344940036D99B /* SettingsController.h */,
+				0905B2C714C35EED0038A1F0 /* Resources */,
 				095DD2B814C344940036D995 /* Supporting Files */,
 			);
 			path = "transmissionbt-ios";
@@ -150,6 +180,10 @@
 			files = (
 				095DD2BC14C344940036D995 /* InfoPlist.strings in Resources */,
 				095DD2C814C344940036D995 /* TorrentsController.xib in Resources */,
+				95DD2CD14C344940036D99A /* TorrentDetailsController.xib in Resources */,
+				95DD2CD14C344940036D99F /* SettingsController.xib in Resources */,
+				0905B2C414C35EDC0038A1F0 /* tabbar-settings.png in Resources */,
+				0905B2C514C35EDC0038A1F0 /* tabbar-torrents.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,6 +197,8 @@
 				095DD2BE14C344940036D995 /* main.m in Sources */,
 				095DD2C214C344940036D995 /* AppDelegate.m in Sources */,
 				095DD2C514C344940036D995 /* TorrentsController.m in Sources */,
+				95DD2CD14C344940036D998 /* TorrentDetailsController.m in Sources */,
+				95DD2CD14C344940036D99D /* SettingsController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +314,7 @@
 				095DD2CD14C344940036D995 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
