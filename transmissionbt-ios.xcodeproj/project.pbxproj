@@ -13,8 +13,8 @@
 		095DD2BC14C344940036D995 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 095DD2BA14C344940036D995 /* InfoPlist.strings */; };
 		095DD2BE14C344940036D995 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 095DD2BD14C344940036D995 /* main.m */; };
 		095DD2C214C344940036D995 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 095DD2C114C344940036D995 /* AppDelegate.m */; };
-		095DD2C514C344940036D995 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 095DD2C414C344940036D995 /* ViewController.m */; };
-		095DD2C814C344940036D995 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 095DD2C614C344940036D995 /* ViewController.xib */; };
+		095DD2C514C344940036D995 /* TorrentsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 095DD2C414C344940036D995 /* TorrentsController.m */; };
+		095DD2C814C344940036D995 /* TorrentsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 095DD2C614C344940036D995 /* TorrentsController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +22,15 @@
 		095DD2B114C344940036D995 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		095DD2B314C344940036D995 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		095DD2B514C344940036D995 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		095DD2B914C344940036D995 /* transmissionbt-ios-Info.plist */ = {isa = PBXFileReference; path = "transmissionbt-ios-Info.plist"; sourceTree = "<group>"; };
+		095DD2B914C344940036D995 /* transmissionbt-ios-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "transmissionbt-ios-Info.plist"; sourceTree = "<group>"; };
 		095DD2BB14C344940036D995 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		095DD2BD14C344940036D995 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		095DD2BF14C344940036D995 /* transmissionbt-ios-Prefix.pch */ = {isa = PBXFileReference; path = "transmissionbt-ios-Prefix.pch"; sourceTree = "<group>"; };
-		095DD2C014C344940036D995 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		095DD2BF14C344940036D995 /* transmissionbt-ios-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "transmissionbt-ios-Prefix.pch"; sourceTree = "<group>"; };
+		095DD2C014C344940036D995 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		095DD2C114C344940036D995 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		095DD2C314C344940036D995 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
-		095DD2C414C344940036D995 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		095DD2C714C344940036D995 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		095DD2C314C344940036D995 /* TorrentsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TorrentsController.h; sourceTree = "<group>"; };
+		095DD2C414C344940036D995 /* TorrentsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TorrentsController.m; sourceTree = "<group>"; };
+		095DD2C714C344940036D995 /* TorrentsController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TorrentsController.xib; path = en.lproj/TorrentsController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +79,9 @@
 			children = (
 				095DD2C014C344940036D995 /* AppDelegate.h */,
 				095DD2C114C344940036D995 /* AppDelegate.m */,
-				095DD2C314C344940036D995 /* ViewController.h */,
-				095DD2C414C344940036D995 /* ViewController.m */,
-				095DD2C614C344940036D995 /* ViewController.xib */,
+				095DD2C314C344940036D995 /* TorrentsController.h */,
+				095DD2C414C344940036D995 /* TorrentsController.m */,
+				095DD2C614C344940036D995 /* TorrentsController.xib */,
 				095DD2B814C344940036D995 /* Supporting Files */,
 			);
 			path = "transmissionbt-ios";
@@ -149,7 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				095DD2BC14C344940036D995 /* InfoPlist.strings in Resources */,
-				095DD2C814C344940036D995 /* ViewController.xib in Resources */,
+				095DD2C814C344940036D995 /* TorrentsController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,7 +162,7 @@
 			files = (
 				095DD2BE14C344940036D995 /* main.m in Sources */,
 				095DD2C214C344940036D995 /* AppDelegate.m in Sources */,
-				095DD2C514C344940036D995 /* ViewController.m in Sources */,
+				095DD2C514C344940036D995 /* TorrentsController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,12 +177,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		095DD2C614C344940036D995 /* ViewController.xib */ = {
+		095DD2C614C344940036D995 /* TorrentsController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				095DD2C714C344940036D995 /* en */,
+				095DD2C714C344940036D995 /* TorrentsController.xib */,
 			);
-			name = ViewController.xib;
+			name = TorrentsController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -241,6 +241,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "transmissionbt-ios/transmissionbt-ios-Prefix.pch";
 				INFOPLIST_FILE = "transmissionbt-ios/transmissionbt-ios-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -252,6 +253,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "transmissionbt-ios/transmissionbt-ios-Prefix.pch";
 				INFOPLIST_FILE = "transmissionbt-ios/transmissionbt-ios-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
