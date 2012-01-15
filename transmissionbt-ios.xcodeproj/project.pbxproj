@@ -102,15 +102,7 @@
 			children = (
 				095DD2C014C344940036D995 /* AppDelegate.h */,
 				095DD2C114C344940036D995 /* AppDelegate.m */,
-				095DD2C314C344940036D995 /* TorrentsController.h */,
-				095DD2C414C344940036D995 /* TorrentsController.m */,
-				095DD2C614C344940036D995 /* TorrentsController.xib */,
-				95DD2CD14C344940036D999 /* TorrentDetailsController.xib */,
-				95DD2CD14C344940036D997 /* TorrentDetailsController.m */,
-				95DD2CD14C344940036D996 /* TorrentDetailsController.h */,
-				95DD2CD14C344940036D99E /* SettingsController.xib */,
-				95DD2CD14C344940036D99C /* SettingsController.m */,
-				95DD2CD14C344940036D99B /* SettingsController.h */,
+				95DD2CD14C344940036D9A0 /* Controllers */,
 				0905B2C714C35EED0038A1F0 /* Resources */,
 				095DD2B814C344940036D995 /* Supporting Files */,
 			);
@@ -126,6 +118,22 @@
 				095DD2BF14C344940036D995 /* transmissionbt-ios-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		95DD2CD14C344940036D9A0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				095DD2C614C344940036D995 /* TorrentsController.xib */,
+				095DD2C414C344940036D995 /* TorrentsController.m */,
+				095DD2C314C344940036D995 /* TorrentsController.h */,
+				95DD2CD14C344940036D999 /* TorrentDetailsController.xib */,
+				95DD2CD14C344940036D997 /* TorrentDetailsController.m */,
+				95DD2CD14C344940036D996 /* TorrentDetailsController.h */,
+				95DD2CD14C344940036D99E /* SettingsController.xib */,
+				95DD2CD14C344940036D99C /* SettingsController.m */,
+				95DD2CD14C344940036D99B /* SettingsController.h */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +227,7 @@
 				095DD2C714C344940036D995 /* TorrentsController.xib */,
 			);
 			name = TorrentsController.xib;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
