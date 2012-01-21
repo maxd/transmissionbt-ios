@@ -3,7 +3,7 @@
 @interface Settings : NSObject
 
 + (NSString *)rpcServerName;
-+ (NSString *)rpcServerPort;
++ (int)rpcServerPort;
 + (NSString *)rpcServerLogin;
 + (NSString *)rpcServerPassword;
 

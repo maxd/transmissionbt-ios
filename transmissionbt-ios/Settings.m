@@ -14,8 +14,8 @@ static NSUserDefaults* userDefaults = nil;
     return [userDefaults stringForKey:@"rpc_server_name"];
 }
 
-+ (NSString *)rpcServerPort {
-    return [userDefaults stringForKey:@"rpc_server_port"];
++ (int)rpcServerPort {
+    return [userDefaults integerForKey:@"rpc_server_port"];
 }
 
 + (NSString *)rpcServerLogin {
