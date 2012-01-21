@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0905B2C414C35EDC0038A1F0 /* tabbar-settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 0905B2C214C35EDC0038A1F0 /* tabbar-settings.png */; };
 		0905B2C514C35EDC0038A1F0 /* tabbar-torrents.png in Resources */ = {isa = PBXBuildFile; fileRef = 0905B2C314C35EDC0038A1F0 /* tabbar-torrents.png */; };
+		0919FC2714CA9985007FDAEE /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0919FC2614CA9985007FDAEE /* Settings.bundle */; };
 		095DD2B214C344940036D995 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 095DD2B114C344940036D995 /* UIKit.framework */; };
 		095DD2B414C344940036D995 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 095DD2B314C344940036D995 /* Foundation.framework */; };
 		095DD2B614C344940036D995 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 095DD2B514C344940036D995 /* CoreGraphics.framework */; };
@@ -17,6 +18,7 @@
 		095DD2C214C344940036D995 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 095DD2C114C344940036D995 /* AppDelegate.m */; };
 		095DD2C514C344940036D995 /* TorrentsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 095DD2C414C344940036D995 /* TorrentsController.m */; };
 		095DD2C814C344940036D995 /* TorrentsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 095DD2C614C344940036D995 /* TorrentsController.xib */; };
+		09F002D714CA9EAB00C9AC4D /* Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F002D614CA9EAB00C9AC4D /* Settings.m */; };
 		95DD2CD14C344940036D998 /* TorrentDetailsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DD2CD14C344940036D997 /* TorrentDetailsController.m */; };
 		95DD2CD14C344940036D99A /* TorrentDetailsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95DD2CD14C344940036D999 /* TorrentDetailsController.xib */; };
 		95DD2CD14C344940036D99D /* SettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DD2CD14C344940036D99C /* SettingsController.m */; };
@@ -26,6 +28,7 @@
 /* Begin PBXFileReference section */
 		0905B2C214C35EDC0038A1F0 /* tabbar-settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tabbar-settings.png"; path = "Resources/tabbar-settings.png"; sourceTree = "<group>"; };
 		0905B2C314C35EDC0038A1F0 /* tabbar-torrents.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tabbar-torrents.png"; path = "Resources/tabbar-torrents.png"; sourceTree = "<group>"; };
+		0919FC2614CA9985007FDAEE /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		095DD2AD14C344940036D995 /* transmissionbt-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "transmissionbt-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		095DD2B114C344940036D995 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		095DD2B314C344940036D995 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -39,6 +42,8 @@
 		095DD2C314C344940036D995 /* TorrentsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TorrentsController.h; sourceTree = "<group>"; };
 		095DD2C414C344940036D995 /* TorrentsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TorrentsController.m; sourceTree = "<group>"; };
 		095DD2C714C344940036D995 /* TorrentsController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TorrentsController.xib; path = en.lproj/TorrentsController.xib; sourceTree = "<group>"; };
+		09F002D514CA9EAB00C9AC4D /* Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
+		09F002D614CA9EAB00C9AC4D /* Settings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Settings.m; sourceTree = "<group>"; };
 		95DD2CD14C344940036D996 /* TorrentDetailsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TorrentDetailsController.h; sourceTree = "<group>"; };
 		95DD2CD14C344940036D997 /* TorrentDetailsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TorrentDetailsController.m; sourceTree = "<group>"; };
 		95DD2CD14C344940036D999 /* TorrentDetailsController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TorrentDetailsController.xib; sourceTree = "<group>"; };
@@ -116,6 +121,9 @@
 				095DD2BA14C344940036D995 /* InfoPlist.strings */,
 				095DD2BD14C344940036D995 /* main.m */,
 				095DD2BF14C344940036D995 /* transmissionbt-ios-Prefix.pch */,
+				0919FC2614CA9985007FDAEE /* Settings.bundle */,
+				09F002D514CA9EAB00C9AC4D /* Settings.h */,
+				09F002D614CA9EAB00C9AC4D /* Settings.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -192,6 +200,7 @@
 				95DD2CD14C344940036D99F /* SettingsController.xib in Resources */,
 				0905B2C414C35EDC0038A1F0 /* tabbar-settings.png in Resources */,
 				0905B2C514C35EDC0038A1F0 /* tabbar-torrents.png in Resources */,
+				0919FC2714CA9985007FDAEE /* Settings.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,6 +216,7 @@
 				095DD2C514C344940036D995 /* TorrentsController.m in Sources */,
 				95DD2CD14C344940036D998 /* TorrentDetailsController.m in Sources */,
 				95DD2CD14C344940036D99D /* SettingsController.m in Sources */,
+				09F002D714CA9EAB00C9AC4D /* Settings.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
