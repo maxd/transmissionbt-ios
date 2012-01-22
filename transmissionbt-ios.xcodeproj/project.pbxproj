@@ -10,6 +10,7 @@
 		0905B2C414C35EDC0038A1F0 /* tabbar-settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 0905B2C214C35EDC0038A1F0 /* tabbar-settings.png */; };
 		0905B2C514C35EDC0038A1F0 /* tabbar-torrents.png in Resources */ = {isa = PBXBuildFile; fileRef = 0905B2C314C35EDC0038A1F0 /* tabbar-torrents.png */; };
 		0919FC2714CA9985007FDAEE /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0919FC2614CA9985007FDAEE /* Settings.bundle */; };
+		094AF5E514CAC5DE0044BB0D /* libsbjson-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09ADD24214CAA993006A7726 /* libsbjson-ios.a */; };
 		095DD2B214C344940036D995 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 095DD2B114C344940036D995 /* UIKit.framework */; };
 		095DD2B414C344940036D995 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 095DD2B314C344940036D995 /* Foundation.framework */; };
 		095DD2B614C344940036D995 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 095DD2B514C344940036D995 /* CoreGraphics.framework */; };
@@ -23,7 +24,55 @@
 		95DD2CD14C344940036D99A /* TorrentDetailsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95DD2CD14C344940036D999 /* TorrentDetailsController.xib */; };
 		95DD2CD14C344940036D99D /* SettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DD2CD14C344940036D99C /* SettingsController.m */; };
 		95DD2CD14C344940036D99F /* SettingsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95DD2CD14C344940036D99E /* SettingsController.xib */; };
+		95DD2CD14C344940036D9A3 /* Torrent.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DD2CD14C344940036D9A2 /* Torrent.m */; };
+		95DD2CD14C344940036D9A6 /* TorrentFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DD2CD14C344940036D9A5 /* TorrentFile.m */; };
+		95DD2CD14C344940036D9B2 /* RpcClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DD2CD14C344940036D9B1 /* RpcClient.m */; };
+		95DD2CD14C344940036D9B6 /* Operation.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DD2CD14C344940036D9B5 /* Operation.m */; };
+		95DD2CD14C344940036D9B9 /* FailOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DD2CD14C344940036D9B8 /* FailOperation.m */; };
+		95DD2CD14C344940036D9BD /* OpenSessionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DD2CD14C344940036D9BC /* OpenSessionOperation.m */; };
+		95DD2CD14C344940036D9C0 /* RpcClientContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DD2CD14C344940036D9BF /* RpcClientContext.m */; };
+		95DD2CD14C344940036D9C3 /* LoadAllTorrentsOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DD2CD14C344940036D9C2 /* LoadAllTorrentsOperation.m */; };
+		95DD2CD14C344940036D9C6 /* LoadRecentTorrentsOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DD2CD14C344940036D9C5 /* LoadRecentTorrentsOperation.m */; };
+		95DD2CD14C344940036D9CA /* TorrentsTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DD2CD14C344940036D9C9 /* TorrentsTableController.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		09ADD23D14CAA993006A7726 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09ADD23314CAA993006A7726 /* SBJson.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BC12323D1391D5CC00131607;
+			remoteInfo = SBJson;
+		};
+		09ADD23F14CAA993006A7726 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09ADD23314CAA993006A7726 /* SBJson.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BC1232521391D5CC00131607;
+			remoteInfo = SBJsonTests;
+		};
+		09ADD24114CAA993006A7726 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09ADD23314CAA993006A7726 /* SBJson.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BCC2626913920FC7003D9994;
+			remoteInfo = "sbjson-ios";
+		};
+		09ADD24314CAA993006A7726 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09ADD23314CAA993006A7726 /* SBJson.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BCC2627313920FC7003D9994;
+			remoteInfo = "sbjson-iosTests";
+		};
+		09ADD24614CAA9D4006A7726 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09ADD23314CAA993006A7726 /* SBJson.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BCC2626813920FC7003D9994;
+			remoteInfo = "sbjson-ios";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0905B2C214C35EDC0038A1F0 /* tabbar-settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tabbar-settings.png"; path = "Resources/tabbar-settings.png"; sourceTree = "<group>"; };
@@ -42,6 +91,7 @@
 		095DD2C314C344940036D995 /* TorrentsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TorrentsController.h; sourceTree = "<group>"; };
 		095DD2C414C344940036D995 /* TorrentsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TorrentsController.m; sourceTree = "<group>"; };
 		095DD2C714C344940036D995 /* TorrentsController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TorrentsController.xib; path = en.lproj/TorrentsController.xib; sourceTree = "<group>"; };
+		09ADD23314CAA993006A7726 /* SBJson.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SBJson.xcodeproj; path = "json-framework/SBJson.xcodeproj"; sourceTree = "<group>"; };
 		09F002D514CA9EAB00C9AC4D /* Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
 		09F002D614CA9EAB00C9AC4D /* Settings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Settings.m; sourceTree = "<group>"; };
 		95DD2CD14C344940036D996 /* TorrentDetailsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TorrentDetailsController.h; sourceTree = "<group>"; };
@@ -50,6 +100,28 @@
 		95DD2CD14C344940036D99B /* SettingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsController.h; sourceTree = "<group>"; };
 		95DD2CD14C344940036D99C /* SettingsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsController.m; sourceTree = "<group>"; };
 		95DD2CD14C344940036D99E /* SettingsController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsController.xib; sourceTree = "<group>"; };
+		95DD2CD14C344940036D9A2 /* Torrent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Torrent.m; sourceTree = "<group>"; };
+		95DD2CD14C344940036D9A4 /* Torrent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Torrent.h; sourceTree = "<group>"; };
+		95DD2CD14C344940036D9A5 /* TorrentFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TorrentFile.m; sourceTree = "<group>"; };
+		95DD2CD14C344940036D9A7 /* TorrentFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TorrentFile.h; sourceTree = "<group>"; };
+		95DD2CD14C344940036D9B1 /* RpcClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RpcClient.m; sourceTree = "<group>"; };
+		95DD2CD14C344940036D9B3 /* RpcClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RpcClient.h; sourceTree = "<group>"; };
+		95DD2CD14C344940036D9B4 /* RpcClientDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RpcClientDelegate.h; sourceTree = "<group>"; };
+		95DD2CD14C344940036D9B5 /* Operation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Operation.m; sourceTree = "<group>"; };
+		95DD2CD14C344940036D9B7 /* Operation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Operation.h; sourceTree = "<group>"; };
+		95DD2CD14C344940036D9B8 /* FailOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FailOperation.m; sourceTree = "<group>"; };
+		95DD2CD14C344940036D9BA /* FailOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FailOperation.h; sourceTree = "<group>"; };
+		95DD2CD14C344940036D9BC /* OpenSessionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenSessionOperation.m; sourceTree = "<group>"; };
+		95DD2CD14C344940036D9BE /* OpenSessionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenSessionOperation.h; sourceTree = "<group>"; };
+		95DD2CD14C344940036D9BF /* RpcClientContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RpcClientContext.m; sourceTree = "<group>"; };
+		95DD2CD14C344940036D9C1 /* RpcClientContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RpcClientContext.h; sourceTree = "<group>"; };
+		95DD2CD14C344940036D9C2 /* LoadAllTorrentsOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadAllTorrentsOperation.m; sourceTree = "<group>"; };
+		95DD2CD14C344940036D9C4 /* LoadAllTorrentsOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadAllTorrentsOperation.h; sourceTree = "<group>"; };
+		95DD2CD14C344940036D9C5 /* LoadRecentTorrentsOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadRecentTorrentsOperation.m; sourceTree = "<group>"; };
+		95DD2CD14C344940036D9C7 /* LoadRecentTorrentsOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadRecentTorrentsOperation.h; sourceTree = "<group>"; };
+		95DD2CD14C344940036D9C8 /* TorrentEnums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TorrentEnums.h; sourceTree = "<group>"; };
+		95DD2CD14C344940036D9C9 /* TorrentsTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TorrentsTableController.m; sourceTree = "<group>"; };
+		95DD2CD14C344940036D9CB /* TorrentsTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TorrentsTableController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +132,7 @@
 				095DD2B214C344940036D995 /* UIKit.framework in Frameworks */,
 				095DD2B414C344940036D995 /* Foundation.framework in Frameworks */,
 				095DD2B614C344940036D995 /* CoreGraphics.framework in Frameworks */,
+				094AF5E514CAC5DE0044BB0D /* libsbjson-ios.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +154,7 @@
 				095DD2B714C344940036D995 /* transmissionbt-ios */,
 				095DD2B014C344940036D995 /* Frameworks */,
 				095DD2AE14C344940036D995 /* Products */,
+				09ADD23314CAA993006A7726 /* SBJson.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,11 +179,13 @@
 		095DD2B714C344940036D995 /* transmissionbt-ios */ = {
 			isa = PBXGroup;
 			children = (
+				95DD2CD14C344940036D9B0 /* Client */,
 				095DD2C014C344940036D995 /* AppDelegate.h */,
 				095DD2C114C344940036D995 /* AppDelegate.m */,
 				95DD2CD14C344940036D9A0 /* Controllers */,
 				0905B2C714C35EED0038A1F0 /* Resources */,
 				095DD2B814C344940036D995 /* Supporting Files */,
+				95DD2CD14C344940036D9A1 /* Model */,
 			);
 			path = "transmissionbt-ios";
 			sourceTree = "<group>";
@@ -128,9 +204,22 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		09ADD23414CAA993006A7726 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				09ADD23E14CAA993006A7726 /* SBJson.framework */,
+				09ADD24014CAA993006A7726 /* SBJsonTests.octest */,
+				09ADD24214CAA993006A7726 /* libsbjson-ios.a */,
+				09ADD24414CAA993006A7726 /* sbjson-iosTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		95DD2CD14C344940036D9A0 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				95DD2CD14C344940036D9CB /* TorrentsTableController.h */,
+				95DD2CD14C344940036D9C9 /* TorrentsTableController.m */,
 				095DD2C614C344940036D995 /* TorrentsController.xib */,
 				095DD2C414C344940036D995 /* TorrentsController.m */,
 				095DD2C314C344940036D995 /* TorrentsController.h */,
@@ -142,6 +231,55 @@
 				95DD2CD14C344940036D99B /* SettingsController.h */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		95DD2CD14C344940036D9A1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				95DD2CD14C344940036D9C8 /* TorrentEnums.h */,
+				95DD2CD14C344940036D9A7 /* TorrentFile.h */,
+				95DD2CD14C344940036D9A5 /* TorrentFile.m */,
+				95DD2CD14C344940036D9A4 /* Torrent.h */,
+				95DD2CD14C344940036D9A2 /* Torrent.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		95DD2CD14C344940036D9AB /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		95DD2CD14C344940036D9B0 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				95DD2CD14C344940036D9C1 /* RpcClientContext.h */,
+				95DD2CD14C344940036D9BF /* RpcClientContext.m */,
+				95DD2CD14C344940036D9B4 /* RpcClientDelegate.h */,
+				95DD2CD14C344940036D9B3 /* RpcClient.h */,
+				95DD2CD14C344940036D9B1 /* RpcClient.m */,
+				95DD2CD14C344940036D9BB /* Operations */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		95DD2CD14C344940036D9BB /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				95DD2CD14C344940036D9C7 /* LoadRecentTorrentsOperation.h */,
+				95DD2CD14C344940036D9C5 /* LoadRecentTorrentsOperation.m */,
+				95DD2CD14C344940036D9C4 /* LoadAllTorrentsOperation.h */,
+				95DD2CD14C344940036D9C2 /* LoadAllTorrentsOperation.m */,
+				95DD2CD14C344940036D9BE /* OpenSessionOperation.h */,
+				95DD2CD14C344940036D9BC /* OpenSessionOperation.m */,
+				95DD2CD14C344940036D9B5 /* Operation.m */,
+				95DD2CD14C344940036D9B7 /* Operation.h */,
+				95DD2CD14C344940036D9B8 /* FailOperation.m */,
+				95DD2CD14C344940036D9BA /* FailOperation.h */,
+			);
+			path = Operations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,6 +296,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				09ADD24714CAA9D4006A7726 /* PBXTargetDependency */,
 			);
 			name = "transmissionbt-ios";
 			productName = "transmissionbt-ios";
@@ -182,12 +321,49 @@
 			mainGroup = 095DD2A214C344940036D995;
 			productRefGroup = 095DD2AE14C344940036D995 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 09ADD23414CAA993006A7726 /* Products */;
+					ProjectRef = 09ADD23314CAA993006A7726 /* SBJson.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				095DD2AC14C344940036D995 /* transmissionbt-ios */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		09ADD23E14CAA993006A7726 /* SBJson.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SBJson.framework;
+			remoteRef = 09ADD23D14CAA993006A7726 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		09ADD24014CAA993006A7726 /* SBJsonTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SBJsonTests.octest;
+			remoteRef = 09ADD23F14CAA993006A7726 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		09ADD24214CAA993006A7726 /* libsbjson-ios.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libsbjson-ios.a";
+			remoteRef = 09ADD24114CAA993006A7726 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		09ADD24414CAA993006A7726 /* sbjson-iosTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "sbjson-iosTests.octest";
+			remoteRef = 09ADD24314CAA993006A7726 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		095DD2AB14C344940036D995 /* Resources */ = {
@@ -217,10 +393,28 @@
 				95DD2CD14C344940036D998 /* TorrentDetailsController.m in Sources */,
 				95DD2CD14C344940036D99D /* SettingsController.m in Sources */,
 				09F002D714CA9EAB00C9AC4D /* Settings.m in Sources */,
+				95DD2CD14C344940036D9A3 /* Torrent.m in Sources */,
+				95DD2CD14C344940036D9A6 /* TorrentFile.m in Sources */,
+				95DD2CD14C344940036D9B2 /* RpcClient.m in Sources */,
+				95DD2CD14C344940036D9B6 /* Operation.m in Sources */,
+				95DD2CD14C344940036D9B9 /* FailOperation.m in Sources */,
+				95DD2CD14C344940036D9BD /* OpenSessionOperation.m in Sources */,
+				95DD2CD14C344940036D9C0 /* RpcClientContext.m in Sources */,
+				95DD2CD14C344940036D9C3 /* LoadAllTorrentsOperation.m in Sources */,
+				95DD2CD14C344940036D9C6 /* LoadRecentTorrentsOperation.m in Sources */,
+				95DD2CD14C344940036D9CA /* TorrentsTableController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		09ADD24714CAA9D4006A7726 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "sbjson-ios";
+			targetProxy = 09ADD24614CAA9D4006A7726 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		095DD2BA14C344940036D995 /* InfoPlist.strings */ = {
@@ -297,7 +491,9 @@
 				GCC_PREFIX_HEADER = "transmissionbt-ios/transmissionbt-ios-Prefix.pch";
 				INFOPLIST_FILE = "transmissionbt-ios/transmissionbt-ios-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/json-framework/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -309,7 +505,9 @@
 				GCC_PREFIX_HEADER = "transmissionbt-ios/transmissionbt-ios-Prefix.pch";
 				INFOPLIST_FILE = "transmissionbt-ios/transmissionbt-ios-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/json-framework/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

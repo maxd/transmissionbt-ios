@@ -5,6 +5,8 @@
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
++ (AppDelegate *)shared;
+
 @property (strong, nonatomic) UIWindow *window;
 
 @property (strong, nonatomic) TorrentsController *torrentsController;
