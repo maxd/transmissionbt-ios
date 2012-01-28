@@ -34,6 +34,7 @@
 		95DD2CD14C344940036D9C3 /* LoadAllTorrentsOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DD2CD14C344940036D9C2 /* LoadAllTorrentsOperation.m */; };
 		95DD2CD14C344940036D9C6 /* LoadRecentTorrentsOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DD2CD14C344940036D9C5 /* LoadRecentTorrentsOperation.m */; };
 		95DD2CD14C344940036D9CA /* TorrentsTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DD2CD14C344940036D9C9 /* TorrentsTableController.m */; };
+		95DD2CD14C344940036D9CD /* RpcClientMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DD2CD14C344940036D9CC /* RpcClientMapper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,6 +123,8 @@
 		95DD2CD14C344940036D9C8 /* TorrentEnums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TorrentEnums.h; sourceTree = "<group>"; };
 		95DD2CD14C344940036D9C9 /* TorrentsTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TorrentsTableController.m; sourceTree = "<group>"; };
 		95DD2CD14C344940036D9CB /* TorrentsTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TorrentsTableController.h; sourceTree = "<group>"; };
+		95DD2CD14C344940036D9CC /* RpcClientMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RpcClientMapper.m; sourceTree = "<group>"; };
+		95DD2CD14C344940036D9CE /* RpcClientMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RpcClientMapper.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -245,16 +248,11 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		95DD2CD14C344940036D9AB /* Libraries */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Libraries;
-			sourceTree = "<group>";
-		};
 		95DD2CD14C344940036D9B0 /* Client */ = {
 			isa = PBXGroup;
 			children = (
+				95DD2CD14C344940036D9CE /* RpcClientMapper.h */,
+				95DD2CD14C344940036D9CC /* RpcClientMapper.m */,
 				95DD2CD14C344940036D9C1 /* RpcClientContext.h */,
 				95DD2CD14C344940036D9BF /* RpcClientContext.m */,
 				95DD2CD14C344940036D9B4 /* RpcClientDelegate.h */,
@@ -403,6 +401,7 @@
 				95DD2CD14C344940036D9C3 /* LoadAllTorrentsOperation.m in Sources */,
 				95DD2CD14C344940036D9C6 /* LoadRecentTorrentsOperation.m in Sources */,
 				95DD2CD14C344940036D9CA /* TorrentsTableController.m in Sources */,
+				95DD2CD14C344940036D9CD /* RpcClientMapper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

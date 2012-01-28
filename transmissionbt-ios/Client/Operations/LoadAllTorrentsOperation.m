@@ -2,6 +2,7 @@
 #import "LoadAllTorrentsOperation.h"
 #import "RpcClientContext.h"
 #import "Torrent.h"
+#import "RpcClientMapper.h"
 
 
 @interface LoadAllTorrentsOperation () <NSURLConnectionDataDelegate>
@@ -29,8 +30,7 @@
 }
 
 - (NSData *)rpcCommand {
-    NSArray *fields = [NSArray arrayWithObjects:@"id", @"status", @"name", @"totalSize", @"error", @"errorString", @"eta", @"leftUntilDone", nil];
-    NSDictionary *arguments = [NSDictionary dictionaryWithObjectsAndKeys:fields, @"fields", nil];
+    NSDictionary *arguments = [NSDictionary dictionaryWithObjectsAndKeys:[RpcClientMapper torrentFields], @"fields", nil];
     NSDictionary *command = [NSDictionary dictionaryWithObjectsAndKeys:@"torrent-get", @"method", arguments, @"arguments", nil];
     return [[command JSONRepresentation] dataUsingEncoding:NSUTF8StringEncoding];
 }
@@ -53,14 +53,8 @@
     NSMutableSet *torrents = [NSMutableSet new];
     for (NSDictionary *torrentNode in torrentsNode) {
         Torrent *torrent = [Torrent new];
-        torrent.id = [[torrentNode objectForKey:@"id"] unsignedIntegerValue];
-        torrent.status = (tr_torrent_activity) [[torrentNode objectForKey:@"status"] unsignedIntegerValue];
-        torrent.name = [torrentNode valueForKey:@"name"];
-        torrent.totalSize = [[torrentNode valueForKey:@"totalSize"] unsignedIntegerValue];
-        torrent.error = (tr_stat_errtype) [[torrentNode objectForKey:@"error"] unsignedIntegerValue];
-        torrent.errorString = [torrentNode objectForKey:@"errorString"];
-        torrent.eta = [[torrentNode objectForKey:@"eta"] integerValue];
-        torrent.percentDone = [[torrentNode objectForKey:@"percentDone"] doubleValue];
+
+        [RpcClientMapper jsonNode:torrentNode toTorrent:torrent];
 
         [torrents addObject:torrent];
     }

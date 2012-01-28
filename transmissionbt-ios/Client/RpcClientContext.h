@@ -18,7 +18,4 @@
 - (void)addTorrents:(NSSet *)torrents;
 - (void)removeTorrents:(NSSet *)torrents;
 
-- (void)addTorrentsObject:(Torrent *)torrent;
-- (void)removeTorrentsObject:(Torrent *)torrent;
-
 @end

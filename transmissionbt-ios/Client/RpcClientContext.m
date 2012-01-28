@@ -41,12 +41,4 @@
     }
 }
 
-- (void)addTorrentsObject:(Torrent *)torrent {
-    [_torrents addObject:torrent];
-}
-
-- (void)removeTorrentsObject:(Torrent *)torrent {
-    [_torrents removeObject:torrent];
-}
-
 @end
