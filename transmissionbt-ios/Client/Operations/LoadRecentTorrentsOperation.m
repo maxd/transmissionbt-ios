@@ -13,19 +13,28 @@
 @implementation LoadRecentTorrentsOperation {
     NSURLConnection *connection;
     NSMutableData *responseData;
+
+    NSTimer *timer;
 }
 
 - (void)execute {
+    timer = [NSTimer scheduledTimerWithTimeInterval:context.updateInterval target:self selector:@selector(timerHandler:) userInfo:nil repeats:YES];
+}
+
+- (void)cancel {
+    [timer invalidate];
+
+    [connection cancel];
+}
+
+- (void)timerHandler:(id)timerHandler {
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[context rpcUrl]];
     [request setHTTPMethod:@"POST"];
     [request addValue:context.sessionId forHTTPHeaderField:@"X-Transmission-Session-Id"];
     [request setHTTPBody:[self rpcCommand]];
 
+    responseData = nil;
     connection = [[NSURLConnection alloc] initWithRequest:request delegate:self startImmediately:YES];
-}
-
-- (void)cancel {
-    [connection cancel];
 }
 
 - (NSData *)rpcCommand {
@@ -59,8 +68,8 @@
     }
     [context addTorrents:torrents];
 
-    NSArray *removedTorrentsNode = [argumentsNode objectForKey:@"removed"]; //TODO: remove removed torrents
-
+    NSArray *removedTorrentsNode = [argumentsNode objectForKey:@"removed"];
+    [context removeTorrents:removedTorrentsNode];
 
     [self handlerSuccess];
 }

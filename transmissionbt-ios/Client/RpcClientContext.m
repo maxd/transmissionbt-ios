@@ -41,9 +41,9 @@
     [delegate torrentsChanged:_torrents];
 }
 
-- (void)removeTorrents:(NSArray *)removedTorrents {
-    for (Torrent *removedTorrent in removedTorrents) {
-        [_torrents removeObjectForKey:[NSNumber numberWithInt:removedTorrent.id]];
+- (void)removeTorrents:(NSArray *)removedTorrentIds {
+    for (NSNumber *removedTorrentId in removedTorrentIds) {
+        [_torrents removeObjectForKey:removedTorrentId];
     }
 
     [delegate torrentsChanged:_torrents];
