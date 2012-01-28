@@ -28,6 +28,7 @@
     [super viewDidLoad];
 
     torrentsTableController = [[TorrentsTableController alloc] initController:rpcClient.rpcClientContext];
+    tblTorrents.delegate = torrentsTableController;
     tblTorrents.dataSource = torrentsTableController;
 
     rpcClient.rpcClientContext.delegate = self;

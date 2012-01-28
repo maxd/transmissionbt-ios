@@ -1,18 +1,25 @@
 #import "TorrentsTableController.h"
 #import "Torrent.h"
 #import "RpcClientContext.h"
+#import "TorrentCell.h"
 
 
 @implementation TorrentsTableController {
     RpcClientContext *rpcClientContext;
     NSArray *torrents;
+    UINib *cellLoader;
 }
+
+static NSString *cellIdentifier = @"TorrentCell";
 
 - (id)initController:(RpcClientContext *)context {
     self = [super init];
     
     if (self) {
         rpcClientContext = context;
+
+        cellLoader = [UINib nibWithNibName:cellIdentifier bundle:[NSBundle mainBundle]];
+
         [self reloadData];
     }
 
@@ -32,19 +39,19 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *cellIdentifier = @"TorrentCell";
-
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
-    }
-
     Torrent *torrent = [torrents objectAtIndex:(NSUInteger) indexPath.row];
 
-    cell.textLabel.text = torrent.name;
+    TorrentCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    if (cell == nil) {
+        cell = [[cellLoader instantiateWithOwner:self options:nil] objectAtIndex:0];
+    }
+    [cell torrentName:torrent.name];
 
     return cell;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 64;
+}
 
 @end

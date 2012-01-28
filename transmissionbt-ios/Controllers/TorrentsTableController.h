@@ -4,7 +4,7 @@
 @class RpcClientContext;
 
 
-@interface TorrentsTableController : NSObject<UITableViewDataSource>
+@interface TorrentsTableController : NSObject<UITableViewDataSource, UITableViewDelegate>
 
 - (id)initController:(RpcClientContext *)context;
 
