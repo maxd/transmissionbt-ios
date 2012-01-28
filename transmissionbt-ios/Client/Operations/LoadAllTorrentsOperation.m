@@ -50,7 +50,7 @@
     NSDictionary *argumentsNode = [json objectForKey:@"arguments"];
     NSArray *torrentsNode = [argumentsNode objectForKey:@"torrents"];
 
-    NSMutableSet *torrents = [NSMutableSet new];
+    NSMutableArray *torrents = [NSMutableArray new];
     for (NSDictionary *torrentNode in torrentsNode) {
         Torrent *torrent = [Torrent new];
 

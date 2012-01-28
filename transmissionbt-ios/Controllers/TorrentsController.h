@@ -1,9 +1,9 @@
 #import <UIKit/UIKit.h>
-#import "RpcClientDelegate.h"
+#import "RpcClientContextDelegate.h"
 
 @class RpcClient;
 
-@interface TorrentsController : UIViewController <RpcClientDelegate>
+@interface TorrentsController : UIViewController <RpcClientContextDelegate>
 
 @property (nonatomic, strong) IBOutlet UITableView *tblTorrents;
 

@@ -3,13 +3,11 @@
 #import "RpcClientContext.h"
 #import "LoadAllTorrentsOperation.h"
 #import "LoadRecentTorrentsOperation.h"
-#import "RpcClientDelegate.h"
 
 @implementation RpcClient {
     RpcClientContext *rpcClientContext;
 }
 
-@synthesize delegate;
 @synthesize rpcClientContext;
 
 - (id)initClient:(RpcClientContext *)context {
@@ -25,15 +23,9 @@
 
         openSessionOperation.successOperation = loadAllTorrentsOperation;
         loadAllTorrentsOperation.successOperation = loadRecentTorrentsOperation;
-
-        [rpcClientContext addObserver:self forKeyPath:@"torrents" options:(NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld) context:NULL];
     }
 
     return self;
-}
-
-- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
-    [delegate torrentsChanged:rpcClientContext.torrents];
 }
 
 - (void)start {

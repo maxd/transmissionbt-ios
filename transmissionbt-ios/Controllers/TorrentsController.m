@@ -30,14 +30,14 @@
     torrentsTableController = [[TorrentsTableController alloc] initController:rpcClient.rpcClientContext];
     tblTorrents.dataSource = torrentsTableController;
 
-    rpcClient.delegate = self;
+    rpcClient.rpcClientContext.delegate = self;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
     return YES;
 }
 
-- (void)torrentsChanged:(NSSet *)torrents {
+- (void)torrentsChanged:(NSDictionary *)torrents {
     [torrentsTableController reloadData];
     [tblTorrents reloadData];
 }

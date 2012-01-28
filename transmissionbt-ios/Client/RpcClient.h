@@ -1,7 +1,7 @@
 #import <Foundation/Foundation.h>
 
 @class RpcClientContext;
-@protocol RpcClientDelegate;
+@protocol RpcClientContextDelegate;
 
 @interface RpcClient : NSObject
 
@@ -10,7 +10,6 @@
 - (void)start;
 - (void)stop;
 
-@property (nonatomic, unsafe_unretained) id<RpcClientDelegate> delegate;
 @property (nonatomic, strong, readonly) RpcClientContext *rpcClientContext;
 
 @end

@@ -107,7 +107,7 @@
 		95DD2CD14C344940036D9A7 /* TorrentFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TorrentFile.h; sourceTree = "<group>"; };
 		95DD2CD14C344940036D9B1 /* RpcClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RpcClient.m; sourceTree = "<group>"; };
 		95DD2CD14C344940036D9B3 /* RpcClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RpcClient.h; sourceTree = "<group>"; };
-		95DD2CD14C344940036D9B4 /* RpcClientDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RpcClientDelegate.h; sourceTree = "<group>"; };
+		95DD2CD14C344940036D9B4 /* RpcClientContextDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RpcClientContextDelegate.h; sourceTree = "<group>"; };
 		95DD2CD14C344940036D9B5 /* Operation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Operation.m; sourceTree = "<group>"; };
 		95DD2CD14C344940036D9B7 /* Operation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Operation.h; sourceTree = "<group>"; };
 		95DD2CD14C344940036D9B8 /* FailOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FailOperation.m; sourceTree = "<group>"; };
@@ -255,7 +255,7 @@
 				95DD2CD14C344940036D9CC /* RpcClientMapper.m */,
 				95DD2CD14C344940036D9C1 /* RpcClientContext.h */,
 				95DD2CD14C344940036D9BF /* RpcClientContext.m */,
-				95DD2CD14C344940036D9B4 /* RpcClientDelegate.h */,
+				95DD2CD14C344940036D9B4 /* RpcClientContextDelegate.h */,
 				95DD2CD14C344940036D9B3 /* RpcClient.h */,
 				95DD2CD14C344940036D9B1 /* RpcClient.m */,
 				95DD2CD14C344940036D9BB /* Operations */,

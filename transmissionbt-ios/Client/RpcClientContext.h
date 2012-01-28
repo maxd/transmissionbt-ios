@@ -2,6 +2,7 @@
 
 @class Operation;
 @class Torrent;
+@protocol RpcClientContextDelegate;
 
 
 @interface RpcClientContext : NSObject
@@ -13,9 +14,11 @@
 
 @property (nonatomic, strong) NSString *sessionId;
 
-- (NSSet *)torrents;
+@property (nonatomic, unsafe_unretained) id<RpcClientContextDelegate> delegate;
 
-- (void)addTorrents:(NSSet *)torrents;
-- (void)removeTorrents:(NSSet *)torrents;
+- (NSDictionary *)torrents;
+
+- (void)addTorrents:(NSArray *)newTorrents;
+- (void)removeTorrents:(NSArray *)removedTorrents;
 
 @end

@@ -20,7 +20,7 @@
 }
 
 - (void)reloadData {
-    torrents = [[rpcClientContext.torrents allObjects] sortedArrayUsingComparator:^NSComparisonResult(id obj1, id obj2) {
+    torrents = [[rpcClientContext.torrents allValues] sortedArrayUsingComparator:^NSComparisonResult(id obj1, id obj2) {
         Torrent *torrent1 = obj1;
         Torrent *torrent2 = obj2;
         return [torrent1.name compare:torrent2.name];
