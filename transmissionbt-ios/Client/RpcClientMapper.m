@@ -8,7 +8,7 @@
 + (NSArray *)torrentFields {
     static NSArray *torrentFields = nil;
     if (torrentFields == nil) {
-        torrentFields = [NSArray arrayWithObjects:@"id", @"status", @"name", @"totalSize", @"error", @"errorString", @"eta", @"leftUntilDone", nil];
+        torrentFields = [NSArray arrayWithObjects:@"id", @"status", @"name", @"totalSize", @"error", @"errorString", @"eta", @"leftUntilDone", @"percentDone", nil];
     }
     return torrentFields;
 }
@@ -21,7 +21,7 @@
     torrent.error = (tr_stat_errtype) [[torrentNode objectForKey:@"error"] unsignedIntegerValue];
     torrent.errorString = [torrentNode objectForKey:@"errorString"];
     torrent.eta = [[torrentNode objectForKey:@"eta"] integerValue];
-    torrent.percentDone = [[torrentNode objectForKey:@"percentDone"] doubleValue];
+    torrent.percentDone = [[torrentNode objectForKey:@"percentDone"] floatValue];
 }
 
 @end

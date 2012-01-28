@@ -10,7 +10,7 @@
 @property (nonatomic) tr_stat_errtype error;
 @property (nonatomic, strong) NSString *errorString;
 @property (nonatomic) NSInteger eta;
-@property (nonatomic) double percentDone;
+@property (nonatomic) float percentDone;
 
 @property (nonatomic, strong) NSArray *files;
 

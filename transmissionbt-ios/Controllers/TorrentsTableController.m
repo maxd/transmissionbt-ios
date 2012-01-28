@@ -45,7 +45,7 @@ static NSString *cellIdentifier = @"TorrentCell";
     if (cell == nil) {
         cell = [[cellLoader instantiateWithOwner:self options:nil] objectAtIndex:0];
     }
-    [cell torrentName:torrent.name];
+    [cell torrent:torrent];
 
     return cell;
 }

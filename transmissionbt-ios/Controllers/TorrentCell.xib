@@ -11,9 +11,10 @@
 			<string key="NS.object.0">933</string>
 		</object>
 		<array key="IBDocument.IntegratedClassDependencies">
-			<string>IBProxyObject</string>
-			<string>IBUILabel</string>
+			<string>IBUIProgressView</string>
 			<string>IBUITableViewCell</string>
+			<string>IBUILabel</string>
+			<string>IBProxyObject</string>
 		</array>
 		<array key="IBDocument.PluginDependencies">
 			<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -33,7 +34,7 @@
 			</object>
 			<object class="IBUITableViewCell" id="868859749">
 				<reference key="NSNextResponder"/>
-				<int key="NSvFlags">292</int>
+				<int key="NSvFlags">274</int>
 				<array class="NSMutableArray" key="NSSubviews">
 					<object class="IBUIView" id="158311413">
 						<reference key="NSNextResponder" ref="868859749"/>
@@ -42,7 +43,91 @@
 							<object class="IBUILabel" id="1050216553">
 								<reference key="NSNextResponder" ref="158311413"/>
 								<int key="NSvFlags">290</int>
-								<string key="NSFrame">{{5, 0}, {310, 21}}</string>
+								<string key="NSFrame">{{10, 5}, {620, 15}}</string>
+								<reference key="NSSuperview" ref="158311413"/>
+								<reference key="NSWindow"/>
+								<reference key="NSNextKeyView" ref="273327487"/>
+								<string key="NSReuseIdentifierKey">_NS:345</string>
+								<bool key="IBUIOpaque">NO</bool>
+								<bool key="IBUIClipsSubviews">YES</bool>
+								<int key="IBUIContentMode">7</int>
+								<bool key="IBUIUserInteractionEnabled">NO</bool>
+								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
+								<string key="IBUIText">Torrent Name</string>
+								<object class="NSColor" key="IBUITextColor" id="534848026">
+									<int key="NSColorSpace">3</int>
+									<bytes key="NSWhite">MQA</bytes>
+								</object>
+								<nil key="IBUIHighlightedColor"/>
+								<int key="IBUIBaselineAdjustment">1</int>
+								<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
+								<float key="IBUIMinimumFontSize">10</float>
+								<object class="IBUIFontDescription" key="IBUIFontDescription" id="700673871">
+									<int key="type">1</int>
+									<double key="pointSize">14</double>
+								</object>
+								<object class="NSFont" key="IBUIFont" id="316468905">
+									<string key="NSName">Helvetica</string>
+									<double key="NSSize">14</double>
+									<int key="NSfFlags">16</int>
+								</object>
+							</object>
+							<object class="IBUILabel" id="273327487">
+								<reference key="NSNextResponder" ref="158311413"/>
+								<int key="NSvFlags">290</int>
+								<string key="NSFrame">{{10, 21}, {620, 10}}</string>
+								<reference key="NSSuperview" ref="158311413"/>
+								<reference key="NSWindow"/>
+								<reference key="NSNextKeyView" ref="840559662"/>
+								<string key="NSReuseIdentifierKey">_NS:345</string>
+								<bool key="IBUIOpaque">NO</bool>
+								<bool key="IBUIClipsSubviews">YES</bool>
+								<int key="IBUIContentMode">7</int>
+								<bool key="IBUIUserInteractionEnabled">NO</bool>
+								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
+								<string key="IBUIText">Size Info Line</string>
+								<object class="NSColor" key="IBUITextColor">
+									<int key="NSColorSpace">1</int>
+									<bytes key="NSRGB">MSAxIDEAA</bytes>
+									<object class="NSColorSpace" key="NSCustomColorSpace" id="671930637">
+										<int key="NSID">1</int>
+									</object>
+								</object>
+								<nil key="IBUIHighlightedColor"/>
+								<int key="IBUIBaselineAdjustment">1</int>
+								<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
+								<float key="IBUIMinimumFontSize">10</float>
+								<object class="IBUIFontDescription" key="IBUIFontDescription">
+									<int key="type">1</int>
+									<double key="pointSize">12</double>
+								</object>
+								<object class="NSFont" key="IBUIFont">
+									<string key="NSName">Helvetica</string>
+									<double key="NSSize">12</double>
+									<int key="NSfFlags">16</int>
+								</object>
+							</object>
+							<object class="IBUIProgressView" id="840559662">
+								<reference key="NSNextResponder" ref="158311413"/>
+								<int key="NSvFlags">290</int>
+								<string key="NSFrame">{{10, 34}, {620, 9}}</string>
+								<reference key="NSSuperview" ref="158311413"/>
+								<reference key="NSWindow"/>
+								<reference key="NSNextKeyView" ref="4103468"/>
+								<string key="NSReuseIdentifierKey">_NS:678</string>
+								<bool key="IBUIOpaque">NO</bool>
+								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
+								<float key="IBUIProgress">0.5</float>
+								<object class="NSColor" key="IBUIProgressTintColor">
+									<int key="NSColorSpace">3</int>
+									<bytes key="NSWhite">MC4zMzMzMzMzMzMzAA</bytes>
+								</object>
+								<reference key="IBUITrackTintColor" ref="534848026"/>
+							</object>
+							<object class="IBUILabel" id="4103468">
+								<reference key="NSNextResponder" ref="158311413"/>
+								<int key="NSvFlags">290</int>
+								<string key="NSFrame">{{10, 47}, {620, 15}}</string>
 								<reference key="NSSuperview" ref="158311413"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView"/>
@@ -52,27 +137,21 @@
 								<int key="IBUIContentMode">7</int>
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-								<string key="IBUIText">Torrent Name</string>
+								<string key="IBUIText">Status Line</string>
 								<object class="NSColor" key="IBUITextColor">
-									<int key="NSColorSpace">3</int>
-									<bytes key="NSWhite">MQA</bytes>
+									<int key="NSColorSpace">1</int>
+									<bytes key="NSRGB">MSAxIDEAA</bytes>
+									<reference key="NSCustomColorSpace" ref="671930637"/>
 								</object>
 								<nil key="IBUIHighlightedColor"/>
 								<int key="IBUIBaselineAdjustment">1</int>
 								<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
 								<float key="IBUIMinimumFontSize">10</float>
-								<object class="IBUIFontDescription" key="IBUIFontDescription">
-									<int key="type">1</int>
-									<double key="pointSize">17</double>
-								</object>
-								<object class="NSFont" key="IBUIFont">
-									<string key="NSName">Helvetica</string>
-									<double key="NSSize">17</double>
-									<int key="NSfFlags">16</int>
-								</object>
+								<reference key="IBUIFontDescription" ref="700673871"/>
+								<reference key="IBUIFont" ref="316468905"/>
 							</object>
 						</array>
-						<string key="NSFrameSize">{320, 63}</string>
+						<string key="NSFrameSize">{640, 63}</string>
 						<reference key="NSSuperview" ref="868859749"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="1050216553"/>
@@ -88,7 +167,7 @@
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 					</object>
 				</array>
-				<string key="NSFrameSize">{320, 64}</string>
+				<string key="NSFrameSize">{640, 64}</string>
 				<reference key="NSSuperview"/>
 				<reference key="NSWindow"/>
 				<reference key="NSNextKeyView" ref="158311413"/>
@@ -107,11 +186,35 @@
 			<array class="NSMutableArray" key="connectionRecords">
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">torrentNameLabel</string>
+						<string key="label">lblTorrentName</string>
 						<reference key="source" ref="868859749"/>
 						<reference key="destination" ref="1050216553"/>
 					</object>
 					<int key="connectionID">7</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">ctlProgress</string>
+						<reference key="source" ref="868859749"/>
+						<reference key="destination" ref="840559662"/>
+					</object>
+					<int key="connectionID">10</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">lblStatusLine</string>
+						<reference key="source" ref="868859749"/>
+						<reference key="destination" ref="4103468"/>
+					</object>
+					<int key="connectionID">13</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">lblSizeInfoLine</string>
+						<reference key="source" ref="868859749"/>
+						<reference key="destination" ref="273327487"/>
+					</object>
+					<int key="connectionID">14</int>
 				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -138,6 +241,9 @@
 						<reference key="object" ref="868859749"/>
 						<array class="NSMutableArray" key="children">
 							<reference ref="1050216553"/>
+							<reference ref="840559662"/>
+							<reference ref="4103468"/>
+							<reference ref="273327487"/>
 						</array>
 						<reference key="parent" ref="0"/>
 						<string key="objectName">TorrentCell</string>
@@ -148,6 +254,21 @@
 						<reference key="parent" ref="868859749"/>
 						<string key="objectName">Torrent Name</string>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">9</int>
+						<reference key="object" ref="840559662"/>
+						<reference key="parent" ref="868859749"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">11</int>
+						<reference key="object" ref="4103468"/>
+						<reference key="parent" ref="868859749"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">12</int>
+						<reference key="object" ref="273327487"/>
+						<reference key="parent" ref="868859749"/>
+					</object>
 				</array>
 			</object>
 			<dictionary class="NSMutableDictionary" key="flattenedProperties">
@@ -155,32 +276,48 @@
 				<string key="-1.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="-2.CustomClassName">UIResponder</string>
 				<string key="-2.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<string key="11.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<string key="12.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="4.CustomClassName">TorrentCell</string>
 				<string key="4.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="5.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<string key="9.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 			</dictionary>
 			<dictionary class="NSMutableDictionary" key="unlocalizedProperties"/>
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">8</int>
+			<int key="maxID">14</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
 				<object class="IBPartialClassDescription">
 					<string key="className">TorrentCell</string>
 					<string key="superclassName">UITableViewCell</string>
-					<object class="NSMutableDictionary" key="outlets">
-						<string key="NS.key.0">torrentNameLabel</string>
-						<string key="NS.object.0">UILabel</string>
-					</object>
-					<object class="NSMutableDictionary" key="toOneOutletInfosByName">
-						<string key="NS.key.0">torrentNameLabel</string>
-						<object class="IBToOneOutletInfo" key="NS.object.0">
-							<string key="name">torrentNameLabel</string>
+					<dictionary class="NSMutableDictionary" key="outlets">
+						<string key="ctlProgress">UIProgressView</string>
+						<string key="lblSizeInfoLine">UILabel</string>
+						<string key="lblStatusLine">UILabel</string>
+						<string key="lblTorrentName">UILabel</string>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
+						<object class="IBToOneOutletInfo" key="ctlProgress">
+							<string key="name">ctlProgress</string>
+							<string key="candidateClassName">UIProgressView</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="lblSizeInfoLine">
+							<string key="name">lblSizeInfoLine</string>
 							<string key="candidateClassName">UILabel</string>
 						</object>
-					</object>
+						<object class="IBToOneOutletInfo" key="lblStatusLine">
+							<string key="name">lblStatusLine</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="lblTorrentName">
+							<string key="name">lblTorrentName</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+					</dictionary>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
 						<string key="minorKey">./Classes/TorrentCell.h</string>
