@@ -37,6 +37,7 @@
 		95DD2CD14C344940036D9C6 /* LoadRecentTorrentsOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DD2CD14C344940036D9C5 /* LoadRecentTorrentsOperation.m */; };
 		95DD2CD14C344940036D9CA /* TorrentsTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DD2CD14C344940036D9C9 /* TorrentsTableController.m */; };
 		95DD2CD14C344940036D9CD /* RpcClientMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DD2CD14C344940036D9CC /* RpcClientMapper.m */; };
+		95DD2CD14C344940036D9D1 /* StopWatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DD2CD14C344940036D9D0 /* StopWatch.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -130,6 +131,8 @@
 		95DD2CD14C344940036D9CB /* TorrentsTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TorrentsTableController.h; sourceTree = "<group>"; };
 		95DD2CD14C344940036D9CC /* RpcClientMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RpcClientMapper.m; sourceTree = "<group>"; };
 		95DD2CD14C344940036D9CE /* RpcClientMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RpcClientMapper.h; sourceTree = "<group>"; };
+		95DD2CD14C344940036D9D0 /* StopWatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StopWatch.m; sourceTree = "<group>"; };
+		95DD2CD14C344940036D9D2 /* StopWatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StopWatch.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +197,7 @@
 				0905B2C714C35EED0038A1F0 /* Resources */,
 				095DD2B814C344940036D995 /* Supporting Files */,
 				95DD2CD14C344940036D9A1 /* Model */,
+				95DD2CD14C344940036D9CF /* Library */,
 			);
 			path = "transmissionbt-ios";
 			sourceTree = "<group>";
@@ -286,6 +290,15 @@
 				95DD2CD14C344940036D9BA /* FailOperation.h */,
 			);
 			path = Operations;
+			sourceTree = "<group>";
+		};
+		95DD2CD14C344940036D9CF /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				95DD2CD14C344940036D9D2 /* StopWatch.h */,
+				95DD2CD14C344940036D9D0 /* StopWatch.m */,
+			);
+			path = Library;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -412,6 +425,7 @@
 				95DD2CD14C344940036D9CA /* TorrentsTableController.m in Sources */,
 				95DD2CD14C344940036D9CD /* RpcClientMapper.m in Sources */,
 				09F8DCC014D409DE006547B0 /* TorrentCell.m in Sources */,
+				95DD2CD14C344940036D9D1 /* StopWatch.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
