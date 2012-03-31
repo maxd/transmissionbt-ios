@@ -27,6 +27,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"NSTexturedFullScreenBackgroundColor.png"]];
+
     torrentsTableController = [[TorrentsTableController alloc] initController:rpcClient.rpcClientContext];
     tblTorrents.delegate = torrentsTableController;
     tblTorrents.dataSource = torrentsTableController;

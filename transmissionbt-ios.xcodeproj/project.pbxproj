@@ -19,6 +19,7 @@
 		095DD2C214C344940036D995 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 095DD2C114C344940036D995 /* AppDelegate.m */; };
 		095DD2C514C344940036D995 /* TorrentsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 095DD2C414C344940036D995 /* TorrentsController.m */; };
 		095DD2C814C344940036D995 /* TorrentsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 095DD2C614C344940036D995 /* TorrentsController.xib */; };
+		09E64B3515271EA2000F468F /* NSTexturedFullScreenBackgroundColor.png in Resources */ = {isa = PBXBuildFile; fileRef = 09E64B3415271EA2000F468F /* NSTexturedFullScreenBackgroundColor.png */; };
 		09F002D714CA9EAB00C9AC4D /* Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F002D614CA9EAB00C9AC4D /* Settings.m */; };
 		09F8DCC014D409DE006547B0 /* TorrentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F8DCBE14D409DE006547B0 /* TorrentCell.m */; };
 		09F8DCC114D409DE006547B0 /* TorrentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09F8DCBF14D409DE006547B0 /* TorrentCell.xib */; };
@@ -96,6 +97,7 @@
 		095DD2C414C344940036D995 /* TorrentsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TorrentsController.m; sourceTree = "<group>"; };
 		095DD2C714C344940036D995 /* TorrentsController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TorrentsController.xib; path = en.lproj/TorrentsController.xib; sourceTree = "<group>"; };
 		09ADD23314CAA993006A7726 /* SBJson.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SBJson.xcodeproj; path = "json-framework/SBJson.xcodeproj"; sourceTree = "<group>"; };
+		09E64B3415271EA2000F468F /* NSTexturedFullScreenBackgroundColor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NSTexturedFullScreenBackgroundColor.png; sourceTree = "<group>"; };
 		09F002D514CA9EAB00C9AC4D /* Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
 		09F002D614CA9EAB00C9AC4D /* Settings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Settings.m; sourceTree = "<group>"; };
 		09F8DCBD14D409DE006547B0 /* TorrentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TorrentCell.h; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 		0905B2C714C35EED0038A1F0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				09E64B3415271EA2000F468F /* NSTexturedFullScreenBackgroundColor.png */,
 				0905B2C214C35EDC0038A1F0 /* tabbar-settings.png */,
 				0905B2C314C35EDC0038A1F0 /* tabbar-torrents.png */,
 			);
@@ -397,6 +400,7 @@
 				0905B2C514C35EDC0038A1F0 /* tabbar-torrents.png in Resources */,
 				0919FC2714CA9985007FDAEE /* Settings.bundle in Resources */,
 				09F8DCC114D409DE006547B0 /* TorrentCell.xib in Resources */,
+				09E64B3515271EA2000F468F /* NSTexturedFullScreenBackgroundColor.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

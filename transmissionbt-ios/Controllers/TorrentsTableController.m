@@ -50,8 +50,4 @@ static NSString *cellIdentifier = @"TorrentCell";
     return cell;
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 64;
-}
-
 @end
